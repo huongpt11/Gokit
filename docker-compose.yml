@@ -1,0 +1,11 @@
+services:
+  timescale:
+    container_name: timescale4
+    image: timescale/timescaledb:latest-pg12
+    environment:
+      - TZ=Asia/Ho_Chi_Minh
+      - POSTGRES_PASSWORD=1
+    ports:
+      - 5433:5432
+    restart: always
+    
